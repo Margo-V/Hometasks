@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
@@ -10,7 +10,7 @@ void printArr(int arr[], const int size);
 void main() {
 	setlocale(LC_ALL, "ru");
 	int s =0;
-	cout << "Ââåäèòå êîëè÷åñòâî ýëåìåíòîâ ìàññèâà: " << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << endl;
 	cin >> s;
 
 	int* arr = new int[s] {};
@@ -30,8 +30,8 @@ void main() {
 		}
 	}
 
-	cout << "Êîëè÷åñòâî ÷åòíûõ ýëåìåíòîâ: " << count_even << endl;
-	cout << "Êîëè÷åñòâî íå÷åòíûõ ýëåìåíòîâ: " << count_odd << endl;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‡ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << count_even << endl;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð½ÐµÑ‡ÐµÑ‚Ð½Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²: " << count_odd << endl;
 
 	int* arr_even = new int[count_even] {};
 	int* arr_odd = new int[count_odd] {};
@@ -46,9 +46,9 @@ void main() {
 		}
 	}
 
-	cout << "\n\n×åòíûå ýëåìåíòû: " << endl;
+	cout << "\n\nÐ§ÐµÑ‚Ð½Ñ‹Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: " << endl;
 	printArr(arr_even, count_even);
-	cout << "\n\nÍå÷åòíûå ýëåìåíòû: " << endl;
+	cout << "\n\nÐÐµÑ‡ÐµÑ‚Ð½Ñ‹Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹: " << endl;
 	printArr(arr_odd, count_odd);
 
 	delete[] arr;
