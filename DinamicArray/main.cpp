@@ -165,7 +165,7 @@ void pop_front(int*& arr, int& n)
 }
 void erase(int*& arr, int& n,int index)
 {
-	int* buffer = new int[n -1];
+	int* buffer = new int[n - 1]{};
 	for (int i = 0; i < n; i++) {
 		buffer[i] = (i < index ? arr[i] : arr[i + 1]);
 	}
