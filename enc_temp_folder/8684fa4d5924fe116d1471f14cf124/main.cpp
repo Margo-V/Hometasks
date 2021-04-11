@@ -24,6 +24,11 @@ void insert_col(int** arr, const int m, int& n, int index);
 void pop_col_back(int** arr, const int m, int& n);
 void pop_col_front(int** arr, const int m, int& n);
 void erase_col(int** arr, const int m, int& n, int index);
+/*
+void pop_col_back(...);
+void pop_col_front(...);
+void erase_col(...);*/
+
 void clear(int**& arr, int& m);
 
 
